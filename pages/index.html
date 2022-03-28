@@ -8,9 +8,9 @@
     <title>Mashego Sililo Portfolio</title>
   </head>
 
-  <body>
+  <body class="scroll-container">
     <!-- Intro Container Start -->
-    <div class="intro-container">
+    <div class="intro-container " id="home">
       <section>
         <!-- <span class="name">Lorem, ipsum.</span> -->
         <article class="intro-body">
@@ -36,24 +36,24 @@
     <!-- Intro Container End -->
 
     <!-- Page menu start -->
-    <div class="contents-container">
+    <div class="contents-container section">
       <ul class="nav-container">
-        <li><a class="nav-link" href="#">About Me</a></li>
-        <li><a class="nav-link" href="#">Projects</a></li>
-        <li><a class="nav-link" href="#">Blog</a></li>
-        <li><a class="nav-link" href="#">Contact</a></li>
+        <li><a class="nav-link" href="#about">About Me</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#blog">Blog</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </div>
     <!-- Page Menu End -->
 
     <!-- About Me Container start -->
-    <div class="about-container">
+    <div class="about-container section" id="about">
       <ul class="inner-nav">
-        <li><a class="nav-link" style="color: black" href="#">Home</a></li>
-        <li><a class="nav-link" style="color: black" href="#">About</a></li>
-        <li><a class="nav-link" style="color: black" href="#">Projects</a></li>
-        <li><a class="nav-link" style="color: black" href="#">Blog</a></li>
-        <li><a class="nav-link" style="color: black" href="#">Contact</a></li>
+        <li><a class="nav-link" style="color: black" href="#home">Home</a></li>
+        <li><a class="nav-link" style="color: black" href="#about">About</a></li>
+        <li><a class="nav-link" style="color: black" href="#projects">Projects</a></li>
+        <li><a class="nav-link" style="color: black" href="#blog">Blog</a></li>
+        <li><a class="nav-link" style="color: black" href="#contact">Contact</a></li>
       </ul>
 
       <article>
@@ -78,13 +78,13 @@
     </div>
     <!-- About Me Container end -->
     <!-- Project Container start -->
-    <div class="project-container" style="background: #F8F4E3">
+    <div class="project-container section" style="background: #F8F4E3" id="projects">
       <ul class="inner-nav">
-        <li><a class="nav-link" style="color: black" href="#">Home</a></li>
-        <li><a class="nav-link" style="color: black" href="#">About</a></li>
-        <li><a class="nav-link" style="color: black" href="#">Projects</a></li>
-        <li><a class="nav-link" style="color: black" href="#">Blog</a></li>
-        <li><a class="nav-link" style="color: black" href="#">Contact</a></li>
+        <li><a class="nav-link" style="color: black" href="#home">Home</a></li>
+        <li><a class="nav-link" style="color: black" href="#about">About</a></li>
+        <li><a class="nav-link" style="color: black" href="#projects">Projects</a></li>
+        <li><a class="nav-link" style="color: black" href="#blog">Blog</a></li>
+        <li><a class="nav-link" style="color: black" href="#contact">Contact</a></li>
       </ul>
       <br />
       <h3 class="section-heading">Projects</h3>
@@ -177,20 +177,20 @@
     </div>
     <!-- Project Container end -->
     <!-- Blog Container start -->
-    <div class="blog-container" style="background: #e9b7b5;">
+    <div class="blog-container section" style="background: #e9b7b5;" id="blog">
       <ul class="inner-nav">
-        <li><a class="nav-link" style="color: black" href="#">Home</a></li>
-        <li><a class="nav-link" style="color: black" href="#">About</a></li>
-        <li><a class="nav-link" style="color: black" href="#">Projects</a></li>
-        <li><a class="nav-link" style="color: black" href="#">Blog</a></li>
-        <li><a class="nav-link" style="color: black" href="#">Contact</a></li>
+        <li><a class="nav-link" style="color: black" href="#home">Home</a></li>
+        <li><a class="nav-link" style="color: black" href="#about">About</a></li>
+        <li><a class="nav-link" style="color: black" href="#project">Projects</a></li>
+        <li><a class="nav-link" style="color: black" href="#blog">Blog</a></li>
+        <li><a class="nav-link" style="color: black" href="#contact">Contact</a></li>
       </ul>
       <h3 class="section-heading">Blog</h3>
       <div class="article-container"></div>
     </div>
     <!-- Blog Container End -->
     <!-- Contact Container Start -->
-    <div class="contact-container" style="background: #F8F4E3">
+    <div class="contact-container section" style="background: #F8F4E3" id="contact">
       <ul class="inner-nav">
         <li><a class="nav-link" style="color: black" href="#">Home</a></li>
         <li><a class="nav-link" style="color: black" href="#">About</a></li>
@@ -332,5 +332,6 @@
       </div>
     </div>
     <!-- Contact Container End -->
+    <script src="../js/app.js"></script>
   </body>
 </html>

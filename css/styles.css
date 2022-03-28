@@ -2,6 +2,10 @@
   font-family: Regal-Finesse;
   src: url(/PFRegalFinessePro-Black.ttf);
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -14,6 +18,8 @@ body {
 .intro-container section {
   width: 50%;
   padding: 2%;
+  background: #f8f4e3;
+  height: inherit;
 }
 .name {
   font-size: 36px;
@@ -21,17 +27,21 @@ body {
 }
 
 .intro-body {
-  
   position: relative;
-  top: 30%;
+  top: 50%;
   width: 85%;
   margin-left: 5%;
+  font-size: 48px;
+  opacity: 0;
+  transition: 2s;
 }
 
-.intro-body {
-  font-size: 48px;
-  
+.intro-body.load {
+  opacity: 1;
+  position: relative;
+  top: 30%;
 }
+
 .intro {
   font-size: 24px;
 }
@@ -39,8 +49,7 @@ body {
 .intro-container div {
   width: 50%;
   padding: 2%;
-  background: #6E7E85;
-  ;
+  background: #6e7e85;
   height: inherit;
 }
 
@@ -52,22 +61,22 @@ nav {
   margin-top: 15%;
   font-size: 72px;
   padding: 5%;
-  color: #F8F4E3
+  color: #f8f4e3;
 }
 
 .intro-down {
-    width: 32px;
-    height: 32px;
-    stroke-width: 1.5px;
-    position: relative;
-    top: 75%;
-    left: 102.7%;
+  width: 32px;
+  height: 32px;
+  stroke-width: 1.5px;
+  position: relative;
+  top: 75%;
+  left: 102.7%;
 }
 
 /* Contents container */
 .contents-container {
   height: 100vh;
-  background-color: #353B3C;
+  background-color: #353b3c;
   margin: 0;
   position: relative;
 }
@@ -83,8 +92,17 @@ nav {
   font-family: Regal-Finesse, Arial, Helvetica, sans-serif;
 }
 
+.nav-container {
+  opacity: 1;
+  transition: 2s;
+}
+
+.nav-container.showLink {
+  opacity: 1;
+}
+
 .nav-link {
-  color: #F8F4E3;
+  color: #f8f4e3;
   text-decoration: none;
 }
 /* #C97C5D */
@@ -114,8 +132,8 @@ nav {
   position: relative;
 }
 .about-container {
-  background: #6E7E85;
-  color: #F8F4E3
+  background: #6e7e85;
+  color: #f8f4e3;
 }
 .about-container article {
   padding: 2%;
